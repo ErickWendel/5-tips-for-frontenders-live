@@ -1,0 +1,65 @@
+1 - ECMAScript Modules - pode isar import, export, toplevel await etc
+   - https://rickandmortyapi.com/
+
+  node -v #18
+  npm i -D http-server@14
+  package.json 
+  script: start 
+
+  touch index.html
+  touch index.js
+
+  index.html
+    all   
+
+  touch config.json 
+    all 
+  index.js 
+    import config.json #only on chrome
+  show config updating
+  show how to disable cache on chrome (network -> disable cache)
+
+  touch service.js 
+    all 
+  index.js 
+    import service.js 
+    all
+2 - Separação de responsabilidades (criar pastinhas)
+  copy and paste 01 
+  rename to 02-single-reponsibility
+  touch controller.js 
+  move all imports
+  
+  prepareItems
+    console.log on results 
+  index.js 
+    call controller
+  touch view 
+    all 
+  controller.js 
+    call updateTable
+
+3 - Padrão de projetos (Injeção de dependencias)
+  copy and paste 02
+  rename to 03-dependency-injection
+  move all imports from controller to index.js
+  index.js 
+    all
+  controller.js
+    update deps 
+  
+4 e 5 - Testes unitários + Stubs, Mocks e tecnicas de testes - mock do window - mostrar piramide de testes
+    copy and paste 03
+    rename to 04-05-node-native-tests
+
+    mkdir tests 
+    touch index.test.js 
+    update package.json 
+    npm t 
+
+    add all its , { todo: true }
+
+    add mockedData
+    all first it
+
+    all
